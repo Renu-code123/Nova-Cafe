@@ -157,20 +157,6 @@ npm run start
 
 ---
 
-## ✦ Color System & Tokens
-
-```css
---bg-primary:         #0C0B09; /* Deep Noir Charcoal */
---bg-secondary:       #141210; /* Dark Roast Surface */
---text-cream:         #F5EFE6; /* Warm Cream Text */
---text-muted:         #9E9589; /* Sand Muted Text */
---accent-amber:       #C88242; /* Warm Copper / Amber Accent */
---accent-amber-light: #DE9B5E; /* Bright Amber Glow */
---border-subtle:      rgba(245, 239, 230, 0.08); /* 1px Hairline Border */
-```
-
----
-
 ## ✦ Contributing & License
 
 Crafted with care for **Nova Café & Artisanal Bistro**.
