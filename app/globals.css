@@ -1,0 +1,135 @@
+@import "tailwindcss";
+
+:root {
+  --bg-primary: #0C0B09;
+  --bg-secondary: #141210;
+  --bg-tertiary: #1C1916;
+  --bg-card: #161411;
+  --bg-card-hover: #201D19;
+  
+  --text-cream: #F5EFE6;
+  --text-muted: #9E9589;
+  --text-dim: #6E665C;
+  
+  --accent-amber: #C88242;
+  --accent-amber-light: #DE9B5E;
+  --accent-espresso: #312117;
+  
+  --border-subtle: rgba(245, 239, 230, 0.08);
+  --border-medium: rgba(245, 239, 230, 0.14);
+  --border-accent: rgba(200, 130, 66, 0.35);
+
+  --font-serif: var(--font-cormorant), "Cormorant Garamond", Georgia, serif;
+  --font-sans: var(--font-jakarta), "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+@theme {
+  --color-nova-bg: #0C0B09;
+  --color-nova-surface: #141210;
+  --color-nova-surface-hover: #1E1A16;
+  --color-nova-card: #161411;
+  --color-nova-cream: #F5EFE6;
+  --color-nova-cream-muted: #D6CCC0;
+  --color-nova-muted: #9E9589;
+  --color-nova-dim: #6E665C;
+  --color-nova-espresso: #2A1E17;
+  --color-nova-amber: #C88242;
+  --color-nova-amber-light: #DE9B5E;
+  --color-nova-border: rgba(245, 239, 230, 0.08);
+  --color-nova-border-medium: rgba(245, 239, 230, 0.14);
+  --color-nova-border-accent: rgba(200, 130, 66, 0.35);
+
+  --font-serif: var(--font-cormorant), "Cormorant Garamond", Georgia, serif;
+  --font-sans: var(--font-jakarta), "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #0C0B09;
+  color: #F5EFE6;
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+}
+
+body {
+  background-color: #0C0B09;
+  color: #F5EFE6;
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  selection-background-color: #C88242;
+  selection-color: #0C0B09;
+}
+
+::selection {
+  background-color: #C88242;
+  color: #0C0B09;
+}
+
+/* Editorial typography classes */
+.font-serif-display {
+  font-family: var(--font-serif);
+}
+
+.font-sans-body {
+  font-family: var(--font-sans);
+}
+
+/* Subtle editorial noise background overlay */
+.bg-grain {
+  background-image: radial-gradient(rgba(245, 239, 230, 0.03) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+/* Thin editorial borders */
+.border-nova {
+  border-color: rgba(245, 239, 230, 0.08);
+}
+
+.border-nova-medium {
+  border-color: rgba(245, 239, 230, 0.14);
+}
+
+.border-nova-amber {
+  border-color: rgba(200, 130, 66, 0.35);
+}
+
+/* Custom minimal scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0C0B09;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #25221D;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #C88242;
+}
+
+/* Glassmorphism restrained */
+.editorial-glass {
+  background: rgba(18, 16, 13, 0.78);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(245, 239, 230, 0.08);
+}
+
+.editorial-card {
+  background: #141210;
+  border: 1px solid rgba(245, 239, 230, 0.08);
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.editorial-card:hover {
+  border-color: rgba(200, 130, 66, 0.28);
+  background: #181512;
+}
